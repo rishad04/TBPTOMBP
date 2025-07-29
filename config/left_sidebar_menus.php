@@ -30,6 +30,15 @@
     ),
     3 => 
     array (
+      'title' => 'Photos',
+      'root' => true,
+      'icon' => 'lni lni-user',
+      'page' => '/admin/photos',
+      'permission' => '',
+      'new-tab' => false,
+    ),
+    4 => 
+    array (
       'title' => 'Website Settings',
       'root' => true,
       'icon' => 'lni lni-cog',
@@ -37,12 +46,12 @@
       'permission' => 'website-setting',
       'new-tab' => false,
     ),
-    4 => 
+    5 => 
     array (
       'section' => 'Admin Controls',
       'permission' => '',
     ),
-    5 => 
+    6 => 
     array (
       'title' => 'Admins',
       'root' => true,
@@ -51,7 +60,7 @@
       'permission' => 'admin',
       'new-tab' => false,
     ),
-    6 => 
+    7 => 
     array (
       'title' => 'Roles & Permissions',
       'root' => true,
@@ -60,7 +69,7 @@
       'permission' => 'role',
       'new-tab' => false,
     ),
-    7 => 
+    8 => 
     array (
       'title' => 'Admin Menu',
       'root' => true,
@@ -69,7 +78,7 @@
       'permission' => 'admin-menu',
       'new-tab' => false,
     ),
-    8 => 
+    9 => 
     array (
       'title' => 'Settings',
       'root' => true,
@@ -78,7 +87,7 @@
       'permission' => 'setting',
       'new-tab' => false,
     ),
-    9 => 
+    10 => 
     array (
       'title' => 'Blog Categories',
       'root' => true,
@@ -87,7 +96,7 @@
       'permission' => 'blog-category',
       'new-tab' => false,
     ),
-    10 => 
+    11 => 
     array (
       'title' => 'Blogs',
       'root' => true,
@@ -96,7 +105,7 @@
       'permission' => 'blog',
       'new-tab' => false,
     ),
-    11 => 
+    12 => 
     array (
       'title' => 'Pages',
       'root' => true,
@@ -105,7 +114,7 @@
       'permission' => 'page',
       'new-tab' => false,
     ),
-    12 => 
+    13 => 
     array (
       'title' => 'Media Library',
       'root' => true,
@@ -114,7 +123,7 @@
       'permission' => 'media-library',
       'new-tab' => false,
     ),
-    13 => 
+    14 => 
     array (
       'title' => 'Logout',
       'root' => true,
