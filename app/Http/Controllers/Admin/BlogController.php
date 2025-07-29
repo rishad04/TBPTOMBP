@@ -61,7 +61,7 @@ class BlogController extends Controller
     public function store(Request $request)
     {
 
-        dd($request->all());
+        // dd($request->all());
         
         $validation_rules=[
             'banner' => 'nullable|image|mimes:jpeg,png,jpg,gif',

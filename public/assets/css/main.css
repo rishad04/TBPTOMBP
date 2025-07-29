@@ -17778,3 +17778,77 @@ fieldset .form-select:focus,
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* Blinker */
+
+  .new-item-standalone-indicator {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  margin-right: 8px;
+  flex-shrink: 0;
+
+  /* Default Primary Color Variables */
+    --indicator-main-color: #007bff; /* A common primary blue */
+    --indicator-rgb-color: 0, 123, 255;
+  }
+
+  /* Error Color Variant */
+  .new-item-standalone-indicator.new-item-error {
+    --indicator-main-color: #dc3545; /* A common error red */
+    --indicator-rgb-color: 220, 53, 69;
+  }
+
+  /* Success Color Variant */
+  .new-item-standalone-indicator.new-item-success {
+    --indicator-main-color: #28a745; /* A common success green */
+    --indicator-rgb-color: 40, 167, 69;
+  }
+
+  /* Warning Color Variant */
+  .new-item-standalone-indicator.new-item-warning {
+    --indicator-main-color: #ffc107; /* A common warning yellow/orange */
+    --indicator-rgb-color: 255, 193, 7;
+  }
+
+  .new-item-standalone-indicator::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--indicator-main-color);
+    border-radius: 50%;
+    animation: blink-effect 1.2s infinite alternate;
+    margin-bottom: 6px;
+  }
+
+  .new-item-standalone-indicator::after {
+    content: attr(data-new-text);
+    color: var(--indicator-main-color);
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  @keyframes blink-effect {
+    0% {
+      opacity: 0.3;
+      box-shadow: 0 0 0 rgba(var(--indicator-rgb-color), 0.7);
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 5px rgba(var(--indicator-rgb-color), 0.9),
+                  0 0 10px rgba(var(--indicator-rgb-color), 0.6);
+    }
+    100% {
+      opacity: 0.3;
+      box-shadow: 0 0 0 rgba(var(--indicator-rgb-color), 0.7);
+    }
+  }
